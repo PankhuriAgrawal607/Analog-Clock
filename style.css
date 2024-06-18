@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff; /* Set text color to white */
+}
+
+.clock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 5px solid #fff; /* Set clock border color to white */
+    border-radius: 50%;
+    background-color: #fff; /* Set clock background color to white */
+}
+
+.hour-hand, .minute-hand, .second-hand {
+    position: absolute;
+    background-color: #fff; /* Set clock hands color to white */
+    transform-origin: 50% 100%;
+}
+
+.hour-hand {
+    width: 6px;
+    height: 50px;
+    background-color: #555;
+    border-radius: 2px;
+    transform-origin: 50% 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;  /* Half of the height */
+    margin-left: -3px;  /* Half of the width */
+}
+
+.minute-hand {
+    width: 4px;
+    height: 80px;
+    background-color: #aa4488;
+    transform-origin: 50% 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -80px;  /* Half of the height */
+    margin-left: -2px;  /* Half of the width */
+}
+
+.second-hand {
+    width: 2px;
+    height: 100px;
+    background-color: #bb3333;
+    transform-origin: 50% 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;  /* Half of the height */
+    margin-left: -1px;  /* Half of the width */
+}
+
+.hour {
+    position: absolute;
+    font-size: 16px;
+    color: #000; 
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #fff; 
+    line-height: 15px;
+    transform-origin: 50% calc(100% - 7.5px);
+}
+
+
+
